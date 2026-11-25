@@ -1,0 +1,40 @@
+/* Keeper's Soup — page shell. The canvas is the game; this file only centres
+   it on a dark storm-sea page and keeps the hint line readable. No gradients,
+   no glass, no violet: flat deep teal, warm cream text. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a1e26;
+  color: #fff3d6;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+canvas#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  display: block;
+  background: #12303c;
+  border: 4px solid #8a5a33;
+  border-radius: 12px;
+}
+
+.hint {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #bfd9de;
+  text-align: center;
+}
